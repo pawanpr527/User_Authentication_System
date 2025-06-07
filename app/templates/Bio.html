@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <h2 class="mb-4">!! Welcome  !!</h2>
+    
+    <div class="mb-4">
+        <img src="{{ url_for('static', filename='pawan1.jpeg') }}" alt="Profile Image" class="img-fluid rounded shadow" style="max-width: 300px;">
+    </div>
+
+    <h4 class="mb-3">Bio Data</h4>
+    <div class="text-start mx-auto" style="max-width: 600px;">
+        <p><strong>Name:</strong> Pawan Kumar</p>
+        <p><strong>Age:</strong> 20</p>
+        <p><strong>Email:</strong> pawanprajapati8678@example.com</p>
+        <p><strong>Education:</strong> B.Tech in Data Science</p>
+        <p><strong>Skills:</strong> Python, Flask, HTML, CSS, JavaScript, MySQL, Git,DSA,OS,OOP</p>
+        <p><strong>Projects:</strong> 
+            <ul>
+                <li>User Authentication System with Flask</li>
+                <li>Portfolio Website</li>
+                <li>leave Management System</li>
+                <li>Tic Tac Toe</li>
+            </ul>
+        </p>
+        <p><strong>Hobbies:</strong> Coding, Photography, Blogging, Cricket</p>
+    </div>
+
+    <div class="mt-4">
+        <img src="{{ url_for('static', filename='pawan7.jpeg') }}" alt="Another Image" class="img-fluid rounded shadow" style="max-width: 400px;">
+    </div>
+</div>
+ <style>
+    .profile-card {
+        background: #f9f9f9;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-card h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .profile-card p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .profile-card a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .profile-card a:hover {
+        color: black;
+    }
+    strong{
+        padding-left: 10px;
+    }
+</style>
+
+<div class="container" id="x">
+    <div class="profile-card text-center">
+        <h1>!! Welcome !!</h1>
+        <p><i class="fa-solid fa-envelope"></i><strong>Email:</strong> pawanprajapati8678@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i><strong>Mobile:</strong> 9358xxxx89</p>
+        <p><i class="fa-brands fa-instagram"></i><strong>Instagram:</strong> <a href="https://www.instagram.com/pawan2502_/" target="_blank">@pawan2502_</a></p>
+        <p><i class="fa-brands fa-linkedin"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pawan-prajapati-b1590b293/" target="_blank">Pawan Prajapati</a></p>
+        <p><i class="fa-brands fa-github"></i><strong>GitHub:</strong> <a href="https://github.com/pawanpr527" target="_blank">@pawanpr527</a></p>
+        <p><i class="fa-brands fa-square-x-twitter"></i><strong>Twitter:</strong> <a href="https://x.com/Gamingpawa54919" target="_blank">@Gamingpawan54919</a></p>
+    </div>
+</div>
+ <div class="container" id="y">
+        <p>
+          <pre> <h2><i class="fa-solid fa-star"></i> Pawan Prajapati</h2>
+
+Hello! I'm Pawan Prajapati, a passionate and dedicated individual with a keen interest in web development and technology. 
+I love building web applications, learning new frameworks, and continuously improving my skills.
+
+🔹 I have hands-on experience in HTML, CSS, JavaScript, Python, Flask, PHP, and MySQL.
+🔹 I enjoy working on both frontend and backend, and I'm currently exploring cloud technologies and deployment using AWS.
+🔹 Apart from coding, I’m also active on platforms like GitHub, LinkedIn, and Twitter, where I share my learning journey and projects.
+
+When I’m not coding, I enjoy watching tech videos, exploring open-source projects, and sometimes gaming too! 🎮</pre>
+        </p>
+    </div>
+{% endblock content %}
